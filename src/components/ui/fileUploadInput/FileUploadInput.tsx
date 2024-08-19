@@ -25,7 +25,7 @@ export function FileUploadInput({label, onFileSelect, register}: Props) {
     }
 
     return (
-        <div className={'flex items-center gap-5 basis-full h-32 mt-3'}>
+        <div className={'flex items-start gap-5 basis-full'}>
             <div className={'flex flex-col gap-2 basis-2/5'}>
                 <label htmlFor={id} className={'text-gray-700'}>{label}</label>
                 <input
@@ -38,7 +38,7 @@ export function FileUploadInput({label, onFileSelect, register}: Props) {
             </div>
             {preview && (
                 <div className={'mb-4'}>
-                    <img src={preview} alt="preview" className={'w-32 h-32 object-cover'}/>
+                    <img src={preview} alt="preview" className={'w-52 h-32 object-cover'}/>
                 </div>
             )}
         </div>
